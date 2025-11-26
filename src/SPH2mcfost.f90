@@ -550,7 +550,7 @@ contains
        ! 1. Using the parameter file gas-to-dust ratio for now
        ! until phantom provides a proper grain size distribution
        !call normalize_dust_density( sum(masse_gaz) * g_to_Msun / disk_zone(1)%gas_to_dust)
-       ! 2. Use dust from Phantom and ignore the gas_to_dust ratio
+       ! 2. Use dust from Phantom and ignore the gas_to_dust ratio 
        call normalize_dust_density(Mtot_dust)
 
     else ! ndusttypes = 0 : using the gas density
